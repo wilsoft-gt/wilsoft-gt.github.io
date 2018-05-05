@@ -1,0 +1,295 @@
+/**/
+/*Detalles generales del estilo*/
+
+/*Quita todo el margen o padding que el estilo del
+navegador pueda poner*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+p, li, a {
+  font-family: 'Average', serif;;
+}
+
+/*Esconde las scroll bars*/
+::-webkit-scrollbar {
+    width: 0px;
+    background: gray;
+}
+
+
+/*##################################################*/
+/*                 Nav Bar / menu                   */
+/*##################################################*/
+
+
+/*navigation bar container*/
+.navCont {
+  border-bottom: 1px solid #555;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 8px;
+  z-index: 10;
+  transition: ease-in-out 0.4s;
+}
+
+/*nav bar menu container ul element*/
+.navMenu{
+  padding-top: 20px;
+  list-style-type: none;
+  top: 0;
+  width: 100%;
+  color: #ddd;
+  
+}
+
+/*navigation bar options li element*/
+.navOpt{
+ float: right;
+  margin-right: 20px;
+  font-size: 0.75em;
+}
+
+.navOpt a:hover {
+  color: white;
+}
+
+/*converting li elements to links with a element*/
+.navOpt a {
+  text-decoration: none;
+  color: #999;
+}
+
+/*logo option positioned at right*/
+.logo {
+  float: left;
+  padding-left: 20px;
+  font-size: 0.75em;
+}
+
+
+/*##################################################*/
+/*                 Hero first cont                  */
+/*##################################################*/
+
+/* Hero section*/
+.hero {
+  height: 100vh;
+  width: 100%; 
+  background-image: url("https://static1.squarespace.com/static/57c97bfdb8a79bd73768ec63/57c985a4725e2541e742d9e1/57ff8e9b9de4bb511886b0d8/1476367419076/code-design.jpg?format=1000w");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-atachment: fixed;
+}
+
+/*Hero container title and subtitle*/
+.heroCont {
+  z-index: 2;
+  padding: 35vh 15% 0 15%;
+  color: white;
+}
+
+/*Hero title*/
+.heroTit {
+  font-weight: bolder;
+  font-size: 6em;
+  text-shadow: 4px 4px 6px black;
+}
+
+/*Hero pargraph*/
+.heroPara {
+  font-weight: bolder;
+  font-size: 1.5em;
+  text-shadow: 4px 4px 6px black;
+}
+
+/*Stiling width of any section*/
+.main{
+  width: 100%;
+  overflow: hidden;
+}
+
+/*##################################################*/
+/*                     about me                     */
+/*##################################################*/
+
+
+/*Acerca de background color*/
+.acercaDe {
+  background-color: rgba(0,0,0,0.95) ;
+  background-image: url("https://www.anywhere.com/img-a/tour/tikal-one-day-Explore-tikal-guatemala/Tikal-9-jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+
+/*Acerca de container*/
+.AcerDeCon {
+  margin: 10%;
+}
+
+/*Acerca de main title*/
+.AcerDeCon h1 {
+  font-weigh: bold;
+  color: #ddd;
+  font-size: 4em;
+  width: inherit;
+  text-align: center;
+}
+
+/*Acerca de paragraph*/
+.AcerDeCon p {
+  color: #ccc;
+  font-size: 1.5em;
+}
+
+/*Acerca de foto personal*/
+.AcerDeFoto {
+  background-image: url("https://lh3.googleusercontent.com/-izFbx8a76uw/WcFXepJnAnI/AAAAAAAACNk/HinkH5o8AdwSX2c2MxVZuqwJE7EMyM_1QCEwYBhgL/w140-h139-p/IMG-20160603-WA0027.jpg");
+  height: 13em;
+  width: 13em;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+/*##################################################*/
+/*                     porfolio                     */
+/*##################################################*/
+
+/*Main div*/
+.webWork {
+  background-color: #444;
+}
+
+/*Titulo*/
+.portText {
+  margin-top: 9vh;
+  text-align: center;
+  font-weigh: bold;
+  color: #ddd;
+  font-size: 4em;
+}
+
+/*Contenedor principal*/
+.mainCont {
+  width: 100%;
+  height: auto;
+  padding: 6vh 4vw;
+
+}
+
+
+/*Define cada uno de los items que habrán en el portfolio*/
+.item {
+  width: 44vw;
+  height: 52vh;
+  margin-right: 4vw;
+  margin-bottom: 6vh;
+  float: left;
+  background-color: white;
+  positon: relative;
+  background-position: center;
+}
+
+/*Titulo y descripcion del item a mostrar*/
+.description {
+  display: none;
+}
+
+.description > a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+/*Al hacer hover sobre item mostrará la descripcion*/
+.item:hover > .description {
+  margin-top: 25%;
+  padding: 1em;
+  display: block;
+  background-color: rgba(0,0,0, 0.7);
+  color: #ddd;
+}
+
+/*Background de cada uno de los items*/
+.WebFirstItem {
+  background-image: url("https://lh3.googleusercontent.com/2LOwIWzpkF-ipejFKnHu0OtcvtC1dYqxJ0LtaF-_ocJAsdvM30SK4FH7E9tuUSmjOoDzdZ3qUjC-93DOdER3=w1366-h653-rw");
+}
+
+.WebSecondItem {
+  background-image: url("https://www.burlingtonbytes.com/wp-content/uploads/2015/03/shutterstock-184547213-Converted-1400x600.png");
+}
+
+.WebThirdItem {
+  background-image: url("https://qph.ec.quoracdn.net/main-qimg-e00b5cb81575bf9c870b0bd19ed7e314-c");
+}
+
+.WebFourthItem {
+  background-image: url("http://pocketnow.com/wp-content/uploads/2017/01/PN-Complete-Web-Programming.jpg");
+}
+
+/**********************************************/
+/*              ART WORK PORTFOLIO            */
+/**********************************************/
+
+.artWork {
+  background-color: #222;
+}
+
+.ArtFirstItem {
+  background-image: url("https://pre00.deviantart.net/3544/th/pre/f/2017/273/f/2/night_landscape_by_wilsoft-dbp3imc.png");
+}
+
+.ArtSecondItem {
+  background-image: url("https://img00.deviantart.net/1190/i/2017/263/e/6/realpig_by_wilsoft-dbo0dx1.jpg");
+}
+
+.ArtThirdItem {
+  background-image: url("https://img00.deviantart.net/164a/i/2017/251/0/1/ender_final_firma_by_wilsoft-dbms2d1.png");
+}
+
+.ArtFourthItem {
+  background-image: url("https://pre00.deviantart.net/1da3/th/pre/i/2017/251/9/4/rock_man_by_wilsoft-dbms1z3.png");
+}
+
+  
+.contact {
+  background-color: #111;
+  height: 100%;
+  overflow: auto;
+
+}
+
+.unorList {
+  list-style-type: none;
+}
+
+.listItem {
+  font-size: 1.5em;
+  margin: 14px;
+  float: right;
+  color: #555;
+}
+
+.listItem > a {
+  color: #555;
+  text-decoration: none;
+}
+
+.listItem  a:hover {
+  color: #999;
+}
+
+.copy {
+  float: left;
+}
