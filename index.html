@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
-  
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Droid+Serif|Monda'>
 <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Average|Fjalla+One'>
-
+<script  src="js/index.js"></script>
+<script src="js/script.js"></script>
       <link rel="stylesheet" href="css/style.css">
 
   
@@ -37,7 +41,7 @@
 
 <!--Acerca de-->
 <div class="main acercaDe" id="about">
-  <div class="AcerDeCon">
+  <div class="AcerDeCon animated animated-hide">
     <div class="AcerDeFoto"></div>
     <div class="AcerDeTexto">
       <h1>About Me</h1><br>
@@ -54,25 +58,48 @@
   <h1 class="portText">FRONT-END PORTFOLIO</h1>
   <div class="mainCont">
     
-    <a href="https://codepen.io/wilsoft-gt/full/yzbwNz/" target="_blank"><div class="item WebFirstItem" style="background-position: top center">
+    <!-- Nicola tesla tribute page -->
+    <a href="https://codepen.io/wilsoft-gt/full/yzbwNz/" target="_blank"><div class="item tesla_tribute animated animated-hide" style="background-position: top center">
       <div class="description">
         <h1>Nicola Tesla Tribute</h1>
         <p>This a tribute to someone that I think is a genius that never received what he deserved so I decided to make a tribute page to him.</p>
       </div>
     </div></a>
-    <div class="item WebSecondItem">
+
+    <!-- random quote machine -->
+    <a href="https://www.wilsonromero.design/randomquote/" target="_blank"> <div class="item random_quote animated animated-hide">
       <div class="description">
-        <h1>Second title: </h1>
-        <p>This is the paragraph wich describe the second item</p>
+        <h1>Random Quote</h1>
+        <p>This is the second project from freecodecamp, the first time I used arrays with tons of quotes and aurhors until I new about APIS.</p>
       </div>
-    </div>
-    <div class="item WebThirdItem">
+    </div></a>
+
+    <!-- weather app project -->
+    <a href="https://www.wilsonromero.design/weatherapp/" target="_blank"> <div class="item weather_app animated animated-hide">
       <div class="description">
-        <h1>Third title: </h1>
-        <p>This is the paragraph wich describe the third item</p>
+        <h1>The Weather</h1>
+        <p>My first real working app using APIS. First time it was confusing about json data but once I got the main idea everyting went clear.</p>
       </div>
-    </div>
-    <div class="item WebFourthItem">
+    </div></a>
+
+    <!-- wikipedia search project -->
+    <a href="https://www.wilsonromero.design/wikipediaviewer/" target="_blank"><div class="item wikipedia_search animated animated-hide">
+      <div class="description">
+        <h1>Wikipedia Search Engine</h1>
+        <p>Kind of complex at the begining because I had to use the wikipedia documentation to understand the API.</p>
+      </div>
+    </div></a>
+
+    <!-- twitch api project -->
+    <a href="https://www.wilsonromero.design/twitchviewer" target="_blank"><div class="item twitch_search animated animated-hide">
+      <div class="description">
+        <h1>Twitch Search</h1>
+        <p>A search tool for twich chanels. Shows online and ofline channels and a stream miniature.</p>
+      </div>
+    </div></a>
+
+
+    <div class="item WebFourthItem animated animated-hide">
       <div class="description">
         <h1>Fourth title: </h1>
         <p>This is the paragraph wich describe the fourth item</p>
@@ -86,25 +113,25 @@
   <h1 class="portText">CG PORTFOLIO</h1>
   <div class="mainCont">
     
-    <div class="item ArtFirstItem">
+    <div class="item ArtFirstItem animated animated-hide">
       <div class="description">
         <h1>Worlf Landscape </h1>
         <p>Fist artwork using Inkscape</p>
       </div>
     </div>
-    <div class="item ArtSecondItem">
+    <div class="item ArtSecondItem animated animated-hide">
       <div class="description">
         <h1>MinePork</h1>
         <p>How does the minecraft characters would be if they where real?</p>
       </div>
     </div>
-    <div class="item ArtThirdItem">
+    <div class="item ArtThirdItem animated animated-hide">
       <div class="description">
         <h1>Snowdy Landscape</h1>
         <p>Test using micropligon displacement in blender 3D</p>
       </div>
     </div>
-    <div class="item ArtFourthItem">
+    <div class="item ArtFourthItem animated animated-hide">
       <div class="description">
         <h1>RockMan</h1>
         <p>Can something be hard and too soft at the same time?</p>
@@ -129,8 +156,6 @@
     </ul>
   </div>
 </div>
-  
-    <script  src="js/index.js"></script>
 
 </body>
 </html>

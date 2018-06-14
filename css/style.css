@@ -3,6 +3,14 @@
 
 /*Quita todo el margen o padding que el estilo del
 navegador pueda poner*/
+.animated-hide {
+  opacity: 0;
+}
+
+.animated {
+  transition: 1s cubic-bezier(0.77, 0, 0.175, 1) opacity;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -198,8 +206,9 @@ p, li, a {
   margin-bottom: 6vh;
   float: left;
   background-color: white;
-  positon: relative;
+  position: relative;
   background-position: center;
+  background-size: cover;
 }
 
 /*Titulo y descripcion del item a mostrar*/
@@ -222,16 +231,24 @@ p, li, a {
 }
 
 /*Background de cada uno de los items*/
-.WebFirstItem {
-  background-image: url("https://lh3.googleusercontent.com/2LOwIWzpkF-ipejFKnHu0OtcvtC1dYqxJ0LtaF-_ocJAsdvM30SK4FH7E9tuUSmjOoDzdZ3qUjC-93DOdER3=w1366-h653-rw");
+.tesla_tribute {
+  background-image: url("../img/nicola_tesla_tribute.png");
 }
 
-.WebSecondItem {
-  background-image: url("https://www.burlingtonbytes.com/wp-content/uploads/2015/03/shutterstock-184547213-Converted-1400x600.png");
+.random_quote {
+  background-image: url("../img/random_quote.png");
 }
 
-.WebThirdItem {
-  background-image: url("https://qph.ec.quoracdn.net/main-qimg-e00b5cb81575bf9c870b0bd19ed7e314-c");
+.weather_app {
+  background-image: url("../img/weather_app.png")
+}
+
+.wikipedia_search{
+  background-image: url("../img/wikipedia_search.png")
+}
+
+.twitch_search {
+  background-image: url("../img/twitch_api.png");
 }
 
 .WebFourthItem {
