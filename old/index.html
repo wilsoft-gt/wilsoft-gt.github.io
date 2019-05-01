@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Droid+Serif|Monda'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Average|Fjalla+One'>
+<script  src="js/index.js"></script>
+<script src="js/script.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!--este es el menu-->
+<nav class="navCont">
+  <ul class="navMenu">
+    <li class="logo navOpt" title="Go to the top"><a href="#"><img src="img/nuevo-logo.svg.png" alt="Home" id="menuLogo"></a></li>
+    
+    <li class="navOpt" title="Social Media Links"><a href="#contact"><i class="fa fa-envelope"></i> CONTACT</a></li> 
+    <li class="navOpt" title="Computer Graphics Portfolio"><a href="#artPort"><i class="fa fa-picture-o"></i> ARTWORK</a></li>
+    <li class="navOpt" title="Web Development Portfolio"><a href="#webPort"><i class="fa fa-th"></i> PORTFOLIO</a></li>
+    <li class="navOpt" title="About Me"><a href="#about"><i class="fa fa-user"></i> ABOUT</a></li>
+  </ul>
+</nav>
+
+<!--comienza el Hero-->
+<div class="hero" move-top="50">
+  <div class="heroCont">
+      <div class="heroTit"></div><br><br><br><br>
+      <p class="heroPara">I'm a pasionate coder, front-end web developer and artist. <br> I love HTML, CSS, JavaScript, Python and more...</p><br><br><br><br><br><br><br> <br><br>
+      <div id="continue"><p>&lt;</p></div>
+    </div>
+</div>
+
+<!--Acerca de-->
+<div class="main acercaDe" id="about">
+  <div class="AcerDeCon animated animated-hide">
+    <div class="AcerDeFoto"></div>
+    <div class="AcerDeTexto">
+      <h1>About Me</h1><br>
+      <p>I was born in Guatemala the country of the eternal spring and by default I have green blood. I grew up in a state named Petén to closer to Tikal. Since child I realized that I loved nature, music, draw and let my imagination fly. </p> <br>
+      <p>I started my carrer as a programer at the high school and I loved programing and everything about computers. I consider myself as a pasionate because most of what I know, I learned by Myself (of course with the help of videotutorials or reading articles about programin, etc).</p><br>
+      <p>I am the kind of person who think that you can become what you want when you whant however you want, the main point is persistence.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- Web porfolio -->
+<div class="main webWork" id="webPort">
+  <h1 class="portText">FRONT-END PORTFOLIO</h1>
+  <div class="mainCont">
+    
+    <!-- Nicola tesla tribute page -->
+    <a href="https://codepen.io/wilsoft-gt/full/yzbwNz/" target="_blank"><div class="item tesla_tribute animated animated-hide" style="background-position: top center">
+      <div class="description">
+        <h1>Nicola Tesla Tribute</h1>
+        <p>This a tribute to someone that I think is a genius that never received what he deserved so I decided to make a tribute page to him.</p>
+      </div>
+    </div></a>
+
+    <!-- random quote machine -->
+    <a href="https://www.wilsonromero.design/randomquote/" target="_blank"> <div class="item random_quote animated animated-hide">
+      <div class="description">
+        <h1>Random Quote</h1>
+        <p>This is the second project from freecodecamp, the first time I used arrays with tons of quotes and aurhors until I new about APIS.</p>
+      </div>
+    </div></a>
+
+    <!-- weather app project -->
+    <a href="https://www.wilsonromero.design/weatherapp/" target="_blank"> <div class="item weather_app animated animated-hide">
+      <div class="description">
+        <h1>The Weather</h1>
+        <p>My first real working app using APIS. First time it was confusing about json data but once I got the main idea everyting went clear.</p>
+      </div>
+    </div></a>
+
+    <!-- wikipedia search project -->
+    <a href="https://www.wilsonromero.design/wikipediaviewer/" target="_blank"><div class="item wikipedia_search animated animated-hide">
+      <div class="description">
+        <h1>Wikipedia Search Engine</h1>
+        <p>Kind of complex at the begining because I had to use the wikipedia documentation to understand the API.</p>
+      </div>
+    </div></a>
+
+    <!-- twitch api project -->
+    <a href="https://www.wilsonromero.design/twitchviewer" target="_blank"><div class="item twitch_search animated animated-hide">
+      <div class="description">
+        <h1>Twitch Search</h1>
+        <p>A search tool for twich chanels. Shows online and ofline channels and a stream miniature.</p>
+      </div>
+    </div></a>
+
+
+    <div class="item WebFourthItem animated animated-hide">
+      <div class="description">
+        <h1>Fourth title: </h1>
+        <p>This is the paragraph wich describe the fourth item</p>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<!-- ArtWork porfolio -->
+<div class="main artWork" id="artPort">
+  <h1 class="portText">CG PORTFOLIO</h1>
+  <div class="mainCont">
+    
+    <div class="item ArtFirstItem animated animated-hide">
+      <div class="description">
+        <h1>Worlf Landscape </h1>
+        <p>Fist artwork using Inkscape</p>
+      </div>
+    </div>
+    <div class="item ArtSecondItem animated animated-hide">
+      <div class="description">
+        <h1>MinePork</h1>
+        <p>How does the minecraft characters would be if they where real?</p>
+      </div>
+    </div>
+    <div class="item ArtThirdItem animated animated-hide">
+      <div class="description">
+        <h1>Snowdy Landscape</h1>
+        <p>Test using micropligon displacement in blender 3D</p>
+      </div>
+    </div>
+    <div class="item ArtFourthItem animated animated-hide">
+      <div class="description">
+        <h1>RockMan</h1>
+        <p>Can something be hard and too soft at the same time?</p>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<!-- contact form -->
+<div class="contactForm">
+  <div>
+    <form method="POST" action="https://formspree.io/contact@wilsonromero.design">
+      <input name="email" placeholder="Your email" type="email"> <br>
+      <input type="text" placeholder="Your name"> <br>
+      <textarea name="message" placeholder="Your message" cols="30" rows="10"></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
+
+<!-- Contacto -->
+<div class="contact" id="contact">
+  <div class="linkCont">
+    <ul class="unorList">
+      <li class="listItem" title="Contact me"><a href="wilson.romero1992@gmail.com" target='_blank'><i class="fa fa-envelope"></i></a></li>
+      <li class="listItem" title="Follow me on Facebook"><a href="https://www.facebook.com/wilmero.romero" target='_blank'><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+      <li class="listItem" title="Follow me on Twitter"><a href="https://twitter.com/wilsoftm" target='_blank'><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+      <li class="listItem" title="Subscribe to my youtube chanel"><a href="https://www.youtube.com/user/wilsoftm" target='_blank'><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+      <li class="listItem" title="Codepen Projects"><a href="https://codepen.io/wilsoft-gt/" target='_blank'><i class="fa fa-codepen" aria-hidden="true"></i></a></li>
+      <li class="listItem" title="FreeCodeCamp Progress"><a href="https://www.freecodecamp.org/wilsoft-gt" target='_blank'><i class="fa fa-free-code-camp" aria-hidden="true"></i></a></li>
+      <li class="listItem" title="GitHub projects and colaborations"><a href="https://github.com/wilsoft-gt" target='_blank'><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li class="listItem" title="3D and 2D artwork"><a href="https://wilsoft.deviantart.com/" target='_blank'><i class="fa fa-deviantart" aria-hidden="true"></i></a></li>
+<li class="listItem copy"><i class="fa fa-copyright" aria-hidden="true"></i> Wilson Romero</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,16 +1,21 @@
-/* var $items = $('.animated');
-var $items = document.getElementsByClassName('animated'); */
-var $window = $(window);
-$window.on('scroll', on_focus_anim);
 
-function on_focus_anim() {
-    $('.animated').each(function () {
-        var $element = $(this);
-        console.log("scroll: " + ($window.scrollTop()+ $window.height()/6) + ' / elements: '+$element.offset().top);
-        if (($window.scrollTop() + $window.height()/1.3) >= $element.offset().top){
-            $element.removeClass('animated-hide');
-        } else {
-            $element.addClass('animated-hide');
-        }
-    });
+
+function ImgParallax() {
+
+    var screenx = window.innerWidth;
+    var screeny = window.innerHeight;
+
+    var xpos = event.clientX;
+    var ypos = event.clientY;
+
+    xpercent = (xpos*100)/screenx;    
+    ypercent = (ypos*100)/screeny;
+
+    xtransform = Math.round(((-70*xpercent)/100)+35);
+    ytransform = Math.round(((70*ypercent)/100)-35);
+
+
+    document.getElementById("mainImg").style.transform = "rotateY("+xtransform +"deg) rotateX("+ytransform +"deg)";
+    document.getElementById("mainImg").style.WebkitTransform = "rotateY("+ xtransform+"deg) rotateX("+ytransform +"deg)";
+    document.getElementById("mainImg").style.msTransform = "rotateY("+ xtransform+"deg) rotateX("+ytransform +"deg)";
 }
