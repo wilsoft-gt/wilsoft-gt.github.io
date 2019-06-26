@@ -38,3 +38,9 @@ body {
     height: auto;
     display: block;
 }
+
+a{
+    text-decoration: underline;
+    color: rgb(83, 83, 83);
+
+}
